@@ -4,11 +4,20 @@ CBio Thursday - Introducing Tidyverse in R
 Before the Workshop
 -------------------
 
-Please note, that in order to participate, you prefarably should be able to connect to the internet via either DTU if you are a student at DTU or [eduroam](https://www.eduroam.org/) if you are a student at another University. It is also possible to use your phone as an access point.
+Due to time constraints, it is *super important* that you make sure to go through the following *before* the workshop:
+
+### Internet Connectivity
+
+Please note, the following internet connectivity options sorted according to descending speed/stability:
+
+-   DTU net if you are a student at DTU
+-   [Eduroam](https://www.eduroam.org/) if you are a student at another University
+-   DTU guest accounts (Arranged by CBIOvikings)
+-   Your phone as an access point
 
 ### Workshop with no internet access
 
-If you cannot connect to internet as described above, then *please* make sure, that you succesfully have installed [the latest version of R](https://mirrors.dotsrc.org/cran/) and also the [RStudio IDE](https://www.rstudio.com/products/rstudio/download/#download). Note you must install `R` first and then `RStudio`.
+It is possible to attend the workshop with no internet connection, however then you *must* have succesfully installed [the latest version of R](https://mirrors.dotsrc.org/cran/) and also the [RStudio IDE](https://www.rstudio.com/products/rstudio/download/#download). Note you must install `R` first and then `RStudio`.
 
 ### Workshop with internet access
 
@@ -16,15 +25,13 @@ If you have internet access, then go to [RStudio Cloud](https://rstudio.cloud/) 
 
 ### Installing Tidyverse
 
-You can install Tidyverse like so:
+Once you have either `R/RStudio` running on your laptop or created an RStudio Cloud account, you can install [Tidyverse](https://www.tidyverse.org/) like so:
 
 ``` r
 install.packages("tidyverse")
 ```
 
-That's it! Now you're ready for CBio Thursday - Introducing Tidyverse in R.
-
-See you soon!
+Congratulations! That's it! Now you're ready for the workshop - See you soon!
 
 Tentative Schedule
 ------------------
