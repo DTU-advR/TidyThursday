@@ -36,7 +36,7 @@ Congratulations! That's it! Now you're ready for the workshop - See you soon!
 Tentative Schedule
 ------------------
 
--   18.00 - 18.10 1. Introduction to the Tidyverse philosophy and the pipe ([`magrittr`](https://cran.r-project.org/web/packages/magrittr/README.html)) \[[Slides]()\]
+-   18.00 - 18.10 1. Introduction to the Tidyverse philosophy and the pipe ([`magrittr`](https://cran.r-project.org/web/packages/magrittr/README.html)) \[[Slides](http://htmlpreview.github.io/?https://github.com/leonjessen/TidyThursday/blob/master/01_introduction/lecture/introduction_presentation.html)\]
 -   18.10 - 18.45 2. Data structures ([`tibble`](https://cran.r-project.org/web/packages/tibble/README.html)) and reading in data ([`readr`](https://cran.r-project.org/web/packages/readr/README.html)) (10 minutes lecture, 25 minutes exercises) \[[Slides](), [Exercises]()\]
 -   18.45 - 19.00 Break
 -   19.00 - 19.45 3. Wrangling data ([`dplyr`](https://cran.r-project.org/web/packages/dplyr/readme/README.html)) (10 minutes lecture, 35 minutes exercises) \[[Slides](), [Exercises]()\]
