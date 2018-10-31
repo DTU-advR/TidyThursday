@@ -1,0 +1,139 @@
+---
+title: "Wrangling data (dplyr)"
+subtitle: "CBio Thursday, session 3"
+author: "Leon Eyrich Jessen & Johannes Eichler Waage"
+date: "November 1st 2018"
+output:
+  ioslides_presentation:
+    widescreen: true
+    smaller: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library('tidyverse')
+library('readxl')
+```
+
+## What is dplyr
+
+dplyr is a grammar of data manipulation, providing a consistent set of verbs that help you solve the most common data manipulation challenges:
+
+- `mutate()` adds new variables that are functions of existing variables
+- `select()` picks variables based on their names
+- `filter()` picks cases based on their values
+- `summarise()` reduces multiple values down to a single summary
+- `arrange()` changes the ordering of the rows
+
+(For those in the room for whom it is relevant, there is a version called [`dbplyr`](https://cran.r-project.org/web/packages/dbplyr/vignettes/dbplyr.html), which can connect remote on-disk data stored in databases)
+
+## Examples - data
+
+The Danish Ministry of Economic and Business Affairs has made a publicly available data base called [noegletal.dk](http://www.noegletal.dk/). From here, we have extracted and cleaned [some example data](https://raw.githubusercontent.com/leonjessen/TidyThursday/master/data/kommune_data.tsv)
+
+As we now know, we can read this directly of the web:
+
+## Examples - data
+
+```{r, echo=TRUE}
+my_url = 'https://raw.githubusercontent.com/leonjessen/TidyThursday/master/data/kommune_data.tsv'
+my_data = read_tsv(file = my_url)
+```
+
+## Examples - data
+
+```{r, echo=TRUE}
+my_data
+```
+
+As we can see, we have the fraction of citizens with a long education, the average tax-income for the municipality per citizen, how much money the municipality spends per primary school pupil and the fraction of pupils attending a private school.
+
+## Examples - `mutate()`
+
+`mutate()` creates new variables, lets calculate a new variable, which is the difference between how money is spend on each pupil and the average tax-income for the municipality per citizen:
+
+```{r, echo=TRUE}
+my_data = my_data %>% mutate(tax_in_pupil_exp_diff = Indt_indkskat - Folkeskudg_elev)
+my_data
+```
+
+## Examples - `select()`
+
+As we can see, our new variable is not shown, we can however use `select()` to show the new variable
+
+```{r, echo=TRUE}
+my_data %>% select(Kommune, Indt_indkskat, Folkeskudg_elev, tax_in_pupil_exp_diff)
+```
+
+## Examples - `filter()`
+
+Let us find all the municipalities, who have a higher tax-income for the municipality per citizen, than what is spend on each pupil:
+
+```{r, echo=TRUE}
+my_data %>% filter(tax_in_pupil_exp_diff > 0)
+```
+
+The `filter()` function works on comparisons, i.e.
+
+- Larger than `>`
+- Smaller than `<`
+- Equal to `==`
+- Not equal to `!=`
+
+## Comparisons
+
+If you are new to comparisons, they are a little tricky initially. The result of a comparison is a logical, which can only ever be either `TRUE` or `FALSE`, e.g.
+
+```{r, echo=TRUE}
+2 > 3
+2 < 3
+2 == 3
+2 != 3
+```
+
+## Comparisons
+
+Comparisons can be combined using 'and' `&` (ampersand) 'or' `|` (pipe), where 'or' means "is either of these comparisons true?" 'and' means "are both of these comparisons true?", e.g.
+
+```{r, echo=TRUE}
+2 > 3 | 4 < 6
+2 > 3 & 4 < 6
+```
+
+## Examples - `filter()`
+
+Let us find all the municipalities, where less than 25% has a long education and where more than 25% of the pupils attend private school:
+
+```{r, echo=TRUE}
+my_data %>% filter(Videreg_udd <= 25 & Pct_prv_sk_elev >= 25)
+```
+
+## Examples - `summarise()`
+
+We can calculate summary statistics using the `summary()` function:
+
+```{r, echo=TRUE}
+my_data %>% summarise(mu = mean(Folkeskudg_elev), sigma = sd(Folkeskudg_elev))
+```
+
+and if we combine this with the `group_by()` function, we can do this:
+
+```{r, echo=TRUE}
+my_data %>% group_by(Region) %>% summarise(mu = mean(Folkeskudg_elev), sigma = sd(Folkeskudg_elev))
+```
+
+## Examples - `arrange()`
+
+This function simply arranges a tibble according to a varible, e.g. arrange ascending:
+
+```{r, echo=TRUE}
+my_data %>% arrange(Videreg_udd)
+```
+
+## Examples - `arrange()`
+
+This function simply arranges a tibble according to a varible, e.g. arrange descending:
+
+```{r, echo=TRUE}
+my_data %>% arrange(desc(Videreg_udd))
+```

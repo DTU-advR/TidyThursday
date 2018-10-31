@@ -1,0 +1,49 @@
+---
+title: "Data structures (tibble) and reading in data (readr)"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Ok, so now it is your turn!
+
+Start by loading the tidyverse library (Type this command in the console in RStudio)
+
+```{r, message=FALSE}
+library('tidyverse')
+```
+
+### Question 1
+
+R comes with some build in data sets, which can be used while learning R.
+
+```{r}
+diamonds
+```
+
+You can get information of the meaning of the variables in diamonds data set like so:
+
+```{r, eval=FALSE}
+?diamonds
+```
+
+Using one of the methods from the presentation, write the `diamonds` data set to an `excel_csv` file, then open it in excel and scroll down to row 27750.
+
+__Q1__ What is the price of this diamond?
+
+### Question 2
+
+Now, again using one of the methods from the presentation, read in the `excel_csv` file you wrote to disk in question 1. We can use the `View()` function to look at data while staying in the RStudio IDE, like so:
+
+```{r, eval=FALSE}
+my_data %>% View
+```
+
+Using the `View()` function, look at the data and scroll down to row 27750
+
+__Q2__ Is this the same value?
+
+(For future reference, just do this `diamonds %>% slice(27750)`)
+
