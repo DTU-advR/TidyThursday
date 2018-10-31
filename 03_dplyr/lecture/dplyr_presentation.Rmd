@@ -137,3 +137,9 @@ This function simply arranges a tibble according to a varible, e.g. arrange desc
 ```{r, echo=TRUE}
 my_data %>% arrange(desc(Videreg_udd))
 ```
+
+## In summary
+
+We hope it is evident just how easy it is to manipulate data using dplyr and how readable the code is!
+
+Now, it is time for exercises!
