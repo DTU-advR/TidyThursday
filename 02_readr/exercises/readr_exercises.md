@@ -55,21 +55,3 @@ Using the `View()` function, look at the data and scroll down to row 27750
 **Q2** Is this the same value?
 
 (For future reference, just do this `diamonds %>% slice(27750)`)
-
-Your first script
------------------
-
-A typical way to structure an R-script could be as follows. Note, how lines starting with `#` are ignored and can be used to comment the code:
-
-``` r
-# Clear workspace
-# ------------------------------------------------------------------------------
-rm(list = ls())
-
-# Load libraries
-# ------------------------------------------------------------------------------
-library('tidyverse')
-
-# Load data
-# ------------------------------------------------------------------------------
-```
