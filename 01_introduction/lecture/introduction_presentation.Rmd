@@ -1,6 +1,6 @@
 ---
 title: "Introducing Tidyverse in R"
-subtitle: "CBio Thursday"
+subtitle: "CBio Thursday, session 1"
 author: "Leon Eyrich Jessen & Johannes Eichler Waage"
 date: "November 1st 2018"
 output:
@@ -43,14 +43,21 @@ As this will be a rather intense workshop, prior experience with `R` will be an 
 
 ## Briefly on R
 
+Why?
+
+- Open source = FREE
+- No longer banned by the FDA
+- A ton of state-of-the-art data science libraries
+- Reproducible science! You cannot repeat point-and-clicky excel analyses
+- Modular, code can be reused across projects
+- Worlds best data science IDE (RStudio)
+- Publication ready graphics
+- We have yet to find analysis, which cannot be done using R
+
+Where?
+
 - [The R Project for Statistical Computing](https://www.r-project.org/) is a programming language scoped at applied data analysis ('the engine')
 - [RStudio](https://www.rstudio.com/) is an Integrated Developer Environment (IDE) facilitating easy interaction with `R` ('the car')
-
-## Briefly on R
-
-```{r, out.width = "800px", fig.align="center"}
-knitr::include_graphics("figures/rstudio_cloud.png")
-```
 
 # Introduction to Tidyverse
 
@@ -58,6 +65,14 @@ knitr::include_graphics("figures/rstudio_cloud.png")
 
 ```{r, out.width = "800px", fig.align="center"}
 knitr::include_graphics("figures/tidyverse_web.png")
+```
+
+## What is RStudio
+
+RStudio is an integrated developer environment (IDE) by a company in Boston, US. They are gathering the best minds within data science and are actively developing data science extensions for `R`. Their software is open source (free) and they aim to make their money on enterprise products
+
+```{r, out.width = "600px", fig.align="center"}
+knitr::include_graphics("figures/rstudio_cloud.png")
 ```
 
 ## What is tidy data?
