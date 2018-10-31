@@ -42,4 +42,20 @@ Tentative Schedule
 -   19.00 - 19.45 3. Wrangling data ([`dplyr`](https://cran.r-project.org/web/packages/dplyr/readme/README.html)) (10 minutes lecture, 35 minutes exercises) \[[Slides](), [Exercises]()\]
 -   19.45 - 20.00 Break
 -   20.00 - 20.45 4. Visualising data ([`ggplot`](https://cran.r-project.org/web/packages/ggplot2/readme/README.html)) (10 minutes lecture, 35 minutes exercises) \[[Slides](), [Exercises]()\]
--   20.45 - 21.00 Q&A and wrap up
+-   20.45 - 21.00 Q&A and wrap up \[[Slides]()\]
+
+Resources
+---------
+
+### Cheat Sheets
+
+-   [RStudio IDE](https://github.com/rstudio/cheatsheets/raw/master/rstudio-ide.pdf)
+-   [Data Import with readr](https://github.com/rstudio/cheatsheets/raw/master/data-import.pdf)
+-   [Data Transformation with dplyr](https://github.com/rstudio/cheatsheets/raw/master/data-transformation.pdf)
+-   [Data Visualization with ggplot2](https://github.com/rstudio/cheatsheets/raw/master/data-visualization-2.1.pdf)
+
+### Books
+
+-   [R for Data Science by Garrett Grolemund and Hadley Wickham](https://r4ds.had.co.nz/)
+
+### Other
