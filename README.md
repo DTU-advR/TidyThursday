@@ -64,4 +64,4 @@ Resources
 
 ### Other
 
--
+-   [ModernDive - An Introduction to Statistical and Data Sciences via R](https://moderndive.com/)

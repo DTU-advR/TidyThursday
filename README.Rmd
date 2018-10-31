@@ -68,4 +68,4 @@ Congratulations! That's it! Now you're ready for the workshop - See you soon!
 
 ### Other
 
-* 
+* [ModernDive - An Introduction to Statistical and Data Sciences via R](https://moderndive.com/)
