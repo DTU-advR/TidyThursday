@@ -1,0 +1,151 @@
+---
+title: "Data structures (tibble) and reading in data (readr)"
+subtitle: "CBio Thursday, session 2"
+author: "Leon Eyrich Jessen & Johannes Eichler Waage"
+date: "November 1st 2018"
+output:
+  ioslides_presentation:
+    widescreen: true
+    smaller: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library('tidyverse')
+library('readxl')
+```
+
+## Briefly on data types in R
+
+In R the following data types exist
+
+- Numbers are `numeric`, e.g. `c(1, 2, 3, 4)`
+- Letters are `character` e.g. `c('A', 'B', 'C', 'D')`
+- Yes/No are `logical`, e.g. `c(TRUE, FALSE, TRUE, FALSE)`
+- Categories are `factor`, e.g. `factor(c('control', 'case', 'control', 'case'))`
+
+We can check if a given variable is of a given data type, e.g.:
+
+```{r, echo=TRUE}
+is.numeric(c(1, 2, 3, 4))
+```
+
+## Briefly on Data structures in R
+
+The matrix can only hold one data type, e.g. numerical
+```{r base_matrix, echo=TRUE}
+matrix(1:8, nrow = 2, byrow = TRUE)
+```
+
+The data frame can mix data types
+```{r base_df, echo=TRUE}
+(d = data.frame(x_var = 1:2, y_var = c('a','b')))
+```
+
+## Briefly on Data structures in R
+
+Problem: `x_var` and  `y_var` can be accessed using `x` and `y`
+```{r base_df_problem, echo=TRUE}
+d$x
+d$y
+```
+
+ - Short hand variable names
+ - StringsAsFactors
+
+# Let's be tidy
+
+## Introducing the `tibble()`
+
+Same data as before - but, now we no longer have a problem
+```{r set_tibble_dat, echo=TRUE}
+d = tibble(x_var = 1:2, y_var = c('a','b'))
+```
+
+```{r tibble_no_problem, echo=TRUE}
+d$x
+d$y_var
+```
+
+ - No short hand variable names
+ - No stringsAsFactors
+
+## Reading files
+
+ - `read.table()` is now `read_table()`
+ - `read.delim()` is now `read_delim()`
+ - `read.delim(sep = "\t")` is now `read_tsv()`
+ - `read.csv()` is now `read_csv()`
+ - Etc.
+
+In general, tidyverse uses the underscore for function names.
+
+No need to use `fread()` the `tidyverse` read file functions are fast!
+
+Also note we do not use one function with different delimiters, we use different functions for each file type! This improves code readability!
+
+## Reading different types of files from disk
+
+```{r, echo=TRUE, eval=FALSE}
+my_data = read_excel(path = 'path/to/my/excel_file.xlsx', sheet = 'target_sheet')
+my_data = read_csv(file = 'path/to/my/csv_file.csv')
+my_data = read_tsv(file = 'path/to/my/tsv_file.tsv')
+my_data = read_delim(file = 'path/to/my/delim_file.txt', delim = ';')
+my_data = read_table(file = 'path/to/my/whitespace_file.txt')
+```
+
+## Reading different types of files from the web
+
+```{r, echo=TRUE, eval=FALSE}
+my_data = read_excel(path = 'http://www.my_site.com/path/to/files/excel_file.xlsx', sheet = 'target_sheet')
+my_data = read_csv(file = 'http://www.my_site.com/path/to/files/csv_file.csv')
+my_data = read_tsv(file = 'http://www.my_site.com/path/to/files/tsv_file.tsv')
+my_data = read_delim(file = 'http://www.my_site.com/path/to/files/delim_file.txt', delim = ';')
+my_data = read_table(file = 'http://www.my_site.com/path/to/files/whitespace_file.txt')
+```
+
+## Writing different types of files to disk
+
+```{r, echo=TRUE, eval=FALSE}
+write_csv(x = my_data, path = 'path/to/my/csv_file.csv')
+write_tsv(x = my_data, path = 'path/to/my/tsv_file.tsv')
+write_delim(x = my_data, path = 'path/to/my/delim_file.txt', delim = ';')
+```
+
+Note how `write_excel()` and `write_table` are missing. We do not export data to an excel file and we do not export data to mono-/multi whitespace separated files
+
+## Other types of files
+
+We can also read and write `SAS`/`SPSS`/`Stata` files using the [`haven`](https://github.com/tidyverse/haven) package
+
+```{r, echo=TRUE, eval=FALSE}
+install.packages('haven')
+library('haven')
+
+# SAS
+read_sas("mtcars.sas7bdat")
+write_sas(mtcars, "mtcars.sas7bdat")
+
+# SPSS
+read_sav("mtcars.sav")
+write_sav(mtcars, "mtcars.sav")
+
+# Stata
+read_dta("mtcars.dta")
+write_dta(mtcars, "mtcars.dta")
+```
+
+Or even write `Excel` files using the [`openxlsx`](https://readxl.tidyverse.org/#other-relevant-packages)
+
+```{r, echo=TRUE, eval=FALSE}
+install.packages('openxlsx')
+library('openxlsx')
+l <- list(iris = iris, mtcars = mtcars, chickwts = chickwts, quakes = quakes)
+write.xlsx(l, file = "inst/extdata/datasets.xlsx")
+```
+
+## In summary
+
+We hope, that it is evident, that you can pretty much interact with any other file format
+
+Now, it is time for exercises!
