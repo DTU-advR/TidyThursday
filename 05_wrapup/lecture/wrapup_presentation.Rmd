@@ -1,0 +1,36 @@
+---
+title: "Workshop Wrapup"
+subtitle: "CBio Thursday, session 5"
+author: "Leon Eyrich Jessen & Johannes Eichler Waage"
+date: "November 1st 2018"
+output:
+  ioslides_presentation:
+    widescreen: true
+    smaller: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+set.seed(978552)
+library('tidyverse')
+```
+
+# So, that was it!
+
+## In summary about Tidyverse
+
+- We realise, that today may have been a little intense for those with no prior experience and mayby even a little boring if you were already well (tidy)versed
+
+- In the interest of time, we did skip quite a lot, if you want the entire story, go talk to Hadley at [https://r4ds.had.co.nz/](https://r4ds.had.co.nz/)
+
+- When it comes to applied data analysis and data visualisation, _nothing_ beats tidyverse!
+
+- Speed, flexibility and code readability is of the essense
+
+- Being able to easily explore data and going quickly from idea to result really is crucial in research
+
+- The GitHub repo we have been working from will continue to be available, so please feel free to revisit the slides and the exercises
+
+- Lastly, if you liked what you saw today and would like Leon and Johannes to come and do a workshop at your university, research institute or company, please do feel free to come and talk to us, when we have concluded this workshop
+
+# Q&A and feedback?
