@@ -58,7 +58,7 @@ At the Workshop
 
 -   20.40 - 20.45 4. Visualising data - Exercises wrap up
 
--   20.45 - 21.00 Q&A and workshop wrap up \[[Slides]()\]
+-   20.45 - 21.00 Q&A and workshop wrap up \[[Slides](http://htmlpreview.github.io/?https://github.com/leonjessen/TidyThursday/blob/master/05_wrapup/lecture/wrapup_presentation.html)\]
 
 Resources
 ---------
