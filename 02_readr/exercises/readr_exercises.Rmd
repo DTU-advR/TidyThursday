@@ -1,5 +1,5 @@
 ---
-title: "Data structures (tibble) and reading in data (readr)"
+title: "Exercises: Data structures (tibble) and reading in data (readr)"
 output: github_document
 ---
 

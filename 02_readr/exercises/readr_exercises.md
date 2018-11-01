@@ -1,4 +1,4 @@
-Data structures (tibble) and reading in data (readr)
+Exercises: Data structures (tibble) and reading in data (readr)
 ================
 
 Ok, so now it is your turn!
