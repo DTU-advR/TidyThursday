@@ -31,7 +31,7 @@ Once you have either `R/RStudio` running on your laptop or created an RStudio Cl
 install.packages("tidyverse")
 ```
 
-Congratulations! That's it! Now you're ready for the workshop - See you soon!
+Congratulations! That's it! Now you're ready for the workshop - See you soon! Please be on time, we *will* start at 18.00
 
 ----- Do not proceed any further, we will go over the following at the workshop -----
 
@@ -41,12 +41,24 @@ At the Workshop
 ### Tentative Schedule
 
 -   18.00 - 18.10 1. Introduction to the Tidyverse philosophy and the pipe ([`magrittr`](https://cran.r-project.org/web/packages/magrittr/README.html)) \[[Slides](http://htmlpreview.github.io/?https://github.com/leonjessen/TidyThursday/blob/master/01_introduction/lecture/introduction_presentation.html)\]
--   18.10 - 18.45 2. Data structures ([`tibble`](https://cran.r-project.org/web/packages/tibble/README.html)) and reading in data ([`readr`](https://cran.r-project.org/web/packages/readr/README.html)) (10 minutes lecture, 25 minutes exercises) \[[Slides](http://htmlpreview.github.io/?https://github.com/leonjessen/TidyThursday/blob/master/02_readr/lecture/readr_presentation.html), [Exercises](https://github.com/leonjessen/TidyThursday/blob/master/02_readr/exercises/readr_exercises.md)\]
+
+-   18.10 - 18.40 2. Data structures ([`tibble`](https://cran.r-project.org/web/packages/tibble/README.html)) and reading in data ([`readr`](https://cran.r-project.org/web/packages/readr/README.html)) (10 minutes lecture, 20 minutes exercises, 5 minutes wrap up) \[[Slides](http://htmlpreview.github.io/?https://github.com/leonjessen/TidyThursday/blob/master/02_readr/lecture/readr_presentation.html), [Exercises](https://github.com/leonjessen/TidyThursday/blob/master/02_readr/exercises/readr_exercises.md)\]
+
+-   18.40 - 18.45 2. Data structures and reading in data - Exercises wrap up
+
 -   18.45 - 19.00 Break
--   19.00 - 19.45 3. Wrangling data ([`dplyr`](https://cran.r-project.org/web/packages/dplyr/readme/README.html)) (10 minutes lecture, 35 minutes exercises) \[[Slides](http://htmlpreview.github.io/?https://github.com/leonjessen/TidyThursday/blob/master/03_dplyr/lecture/dplyr_presentation.html), [Exercises](https://github.com/leonjessen/TidyThursday/blob/master/03_dplyr/exercises/dplyr_exercises.md)\]
+
+-   19.00 - 19.40 3. Wrangling data ([`dplyr`](https://cran.r-project.org/web/packages/dplyr/readme/README.html)) (10 minutes lecture, 20 minutes exercises, 5 minutes wrap up) \[[Slides](http://htmlpreview.github.io/?https://github.com/leonjessen/TidyThursday/blob/master/03_dplyr/lecture/dplyr_presentation.html), [Exercises](https://github.com/leonjessen/TidyThursday/blob/master/03_dplyr/exercises/dplyr_exercises.md)\]
+
+-   19.40 - 19.45 3. Wrangling data - Exercises wrap up
+
 -   19.45 - 20.00 Break
--   20.00 - 20.45 4. Visualising data ([`ggplot`](https://cran.r-project.org/web/packages/ggplot2/readme/README.html)) (10 minutes lecture, 35 minutes exercises) \[[Slides](), [Exercises]()\]
--   20.45 - 21.00 Q&A and wrap up \[[Slides]()\]
+
+-   20.00 - 20.40 4. Visualising data ([`ggplot`](https://cran.r-project.org/web/packages/ggplot2/readme/README.html)) (10 minutes lecture, 20 minutes exercises, 5 minutes wrap up) \[[Slides](), [Exercises]()\]
+
+-   20.40 - 20.45 4. Visualising data - Exercises wrap up
+
+-   20.45 - 21.00 Q&A and workshop wrap up \[[Slides]()\]
 
 Resources
 ---------
