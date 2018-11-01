@@ -38,7 +38,7 @@ Congratulations! That's it! Now you're ready for the workshop - See you soon! Pl
 At the Workshop
 ---------------
 
-### Tentative Schedule
+### Workshop Schedule
 
 -   18.00 - 18.10 1. Introduction to the Tidyverse philosophy and the pipe ([`magrittr`](https://cran.r-project.org/web/packages/magrittr/README.html)) \[[Slides](http://htmlpreview.github.io/?https://github.com/leonjessen/TidyThursday/blob/master/01_introduction/lecture/introduction_presentation.html)\]
 
