@@ -45,7 +45,7 @@ As this will be a rather intense workshop, prior experience with `R` will be an 
 
 Why?
 
-- Open source = FREE
+- Open source = FREE (and a H-U-G-E community = Online help)
 - No longer banned by the FDA
 - A ton of state-of-the-art data science libraries
 - Reproducible science! You cannot repeat point-and-clicky excel analyses
