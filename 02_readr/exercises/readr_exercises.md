@@ -3,6 +3,8 @@ Exercises: Data structures (tibble) and reading in data (readr)
 
 Ok, so now it is your turn!
 
+*Remember, for the following exercises, inspiration for the code is available in the slides for this session*
+
 Start by loading the tidyverse library (Type this command in the console in RStudio)
 
 ``` r

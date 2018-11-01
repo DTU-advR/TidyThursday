@@ -9,6 +9,8 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Ok, so now it is your turn!
 
+_Remember, for the following exercises, inspiration for the code is available in the slides for this session_
+
 Start by loading the tidyverse library (Type this command in the console in RStudio)
 
 ```{r, message=FALSE}
