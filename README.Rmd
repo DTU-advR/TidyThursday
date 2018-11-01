@@ -53,13 +53,13 @@ Congratulations! That's it! Now you're ready for the workshop - See you soon! Pl
 
 * 18.45 - 19.00 Break
 
-* 19.00 - 19.40 3. Wrangling data ([`dplyr`](https://cran.r-project.org/web/packages/dplyr/readme/README.html)) (10 minutes lecture, 20 minutes exercises, 5 minutes wrap up) [[Slides](http://htmlpreview.github.io/?https://github.com/leonjessen/TidyThursday/blob/master/03_dplyr/lecture/dplyr_presentation.html), [Exercises](https://github.com/leonjessen/TidyThursday/blob/master/03_dplyr/exercises/dplyr_exercises.md)]
+* 19.00 - 19.40 3. Wrangling data ([`dplyr`](https://cran.r-project.org/web/packages/dplyr/readme/README.html)) (10 minutes lecture, 30 minutes exercises, 5 minutes wrap up) [[Slides](http://htmlpreview.github.io/?https://github.com/leonjessen/TidyThursday/blob/master/03_dplyr/lecture/dplyr_presentation.html), [Exercises](https://github.com/leonjessen/TidyThursday/blob/master/03_dplyr/exercises/dplyr_exercises.md)]
 
 * 19.40 - 19.45 3. Wrangling data - Exercises wrap up
 
 * 19.45 - 20.00 Break
 
-* 20.00 - 20.40 4. Visualising data ([`ggplot`](https://cran.r-project.org/web/packages/ggplot2/readme/README.html)) (10 minutes lecture, 20 minutes exercises, 5 minutes wrap up) [[Slides](), [Exercises]()]
+* 20.00 - 20.40 4. Visualising data ([`ggplot`](https://cran.r-project.org/web/packages/ggplot2/readme/README.html)) (10 minutes lecture, 30 minutes exercises, 5 minutes wrap up) [[Slides](), [Exercises]()]
 
 * 20.40 - 20.45 4. Visualising data - Exercises wrap up
 
