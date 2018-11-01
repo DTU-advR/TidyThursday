@@ -146,6 +146,6 @@ write.xlsx(l, file = "inst/extdata/datasets.xlsx")
 
 ## In summary
 
-We hope, that it is evident, that you can pretty much interact with any other file format
+We hope, that it is evident, that you can pretty much interact with any other file format and how readable the code is!
 
 Now, it is time for exercises!

@@ -192,19 +192,19 @@
 
 </article></slide><slide class=""><hgroup><h2>Reading different types of files from disk</h2></hgroup><article  id="reading-different-types-of-files-from-disk" class="smaller ">
 
-<pre class = 'prettyprint lang-r'>read_excel(path = &#39;path/to/my/excel_file.xlsx&#39;, sheet = &#39;target_sheet&#39;)
-read_csv(file = &#39;path/to/my/csv_file.csv&#39;)
-read_tsv(file = &#39;path/to/my/tsv_file.tsv&#39;)
-read_delim(file = &#39;path/to/my/delim_file.txt&#39;, delim = &#39;;&#39;)
-read_table(file = &#39;path/to/my/whitespace_file.txt&#39;)</pre>
+<pre class = 'prettyprint lang-r'>my_data = read_excel(path = &#39;path/to/my/excel_file.xlsx&#39;, sheet = &#39;target_sheet&#39;)
+my_data = read_csv(file = &#39;path/to/my/csv_file.csv&#39;)
+my_data = read_tsv(file = &#39;path/to/my/tsv_file.tsv&#39;)
+my_data = read_delim(file = &#39;path/to/my/delim_file.txt&#39;, delim = &#39;;&#39;)
+my_data = read_table(file = &#39;path/to/my/whitespace_file.txt&#39;)</pre>
 
 </article></slide><slide class=""><hgroup><h2>Reading different types of files from the web</h2></hgroup><article  id="reading-different-types-of-files-from-the-web" class="smaller ">
 
-<pre class = 'prettyprint lang-r'>read_excel(path = &#39;http://www.my_site.com/path/to/files/excel_file.xlsx&#39;, sheet = &#39;target_sheet&#39;)
-read_csv(file = &#39;http://www.my_site.com/path/to/files/csv_file.csv&#39;)
-read_tsv(file = &#39;http://www.my_site.com/path/to/files/tsv_file.tsv&#39;)
-read_delim(file = &#39;http://www.my_site.com/path/to/files/delim_file.txt&#39;, delim = &#39;;&#39;)
-read_table(file = &#39;http://www.my_site.com/path/to/files/whitespace_file.txt&#39;)</pre>
+<pre class = 'prettyprint lang-r'>my_data = read_excel(path = &#39;http://www.my_site.com/path/to/files/excel_file.xlsx&#39;, sheet = &#39;target_sheet&#39;)
+my_data = read_csv(file = &#39;http://www.my_site.com/path/to/files/csv_file.csv&#39;)
+my_data = read_tsv(file = &#39;http://www.my_site.com/path/to/files/tsv_file.tsv&#39;)
+my_data = read_delim(file = &#39;http://www.my_site.com/path/to/files/delim_file.txt&#39;, delim = &#39;;&#39;)
+my_data = read_table(file = &#39;http://www.my_site.com/path/to/files/whitespace_file.txt&#39;)</pre>
 
 </article></slide><slide class=""><hgroup><h2>Writing different types of files to disk</h2></hgroup><article  id="writing-different-types-of-files-to-disk" class="smaller ">
 
@@ -242,7 +242,7 @@ write.xlsx(l, file = &quot;inst/extdata/datasets.xlsx&quot;)</pre>
 
 </article></slide><slide class=""><hgroup><h2>In summary</h2></hgroup><article  id="in-summary" class="smaller ">
 
-<p>We hope, that it is evident, that you can pretty much interact with any other file format</p>
+<p>We hope, that it is evident, that you can pretty much interact with any other file format and how readable the code is!</p>
 
 <p>Now, it is time for exercises!</p></article></slide>
 
