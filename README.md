@@ -63,6 +63,13 @@ At the Workshop
 Resources
 ---------
 
+### Web
+
+-   [The R Project for Statistical Computing](https://www.r-project.org/)
+-   [RStudio](https://www.rstudio.com/)
+-   [RStudio Community](https://community.rstudio.com/)
+-   [RStudio Cloud](https://rstudio.cloud/)
+
 ### Cheat Sheets
 
 -   [RStudio IDE](https://github.com/rstudio/cheatsheets/raw/master/rstudio-ide.pdf)
@@ -73,7 +80,4 @@ Resources
 ### Books
 
 -   [R for Data Science by Garrett Grolemund and Hadley Wickham](https://r4ds.had.co.nz/)
-
-### Other
-
 -   [ModernDive - An Introduction to Statistical and Data Sciences via R](https://moderndive.com/)
