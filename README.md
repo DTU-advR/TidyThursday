@@ -54,7 +54,7 @@ At the Workshop
 
 -   19.45 - 20.00 Break
 
--   20.00 - 20.40 4. Visualising data ([`ggplot`](https://cran.r-project.org/web/packages/ggplot2/readme/README.html)) (10 minutes lecture, 30 minutes exercises, 5 minutes wrap up) \[[Slides](http://htmlpreview.github.io/?https://github.com/leonjessen/TidyThursday/blob/master/04_ggplot/lecture/ggplot_presentation.html), [Exercises]()\]
+-   20.00 - 20.40 4. Visualising data ([`ggplot`](https://cran.r-project.org/web/packages/ggplot2/readme/README.html)) (10 minutes lecture, 30 minutes exercises, 5 minutes wrap up) \[[Slides](http://htmlpreview.github.io/?https://github.com/leonjessen/TidyThursday/blob/master/04_ggplot/lecture/ggplot_presentation.html), [Exercises](https://github.com/leonjessen/TidyThursday/blob/master/04_ggplot/exercises/ggplot_exercises.md)\]
 
 -   20.40 - 20.45 4. Visualising data - Exercises wrap up
 
