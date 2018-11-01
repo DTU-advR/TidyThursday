@@ -17,7 +17,7 @@ library('readxl')
 
 ## What is dplyr
 
-dplyr is a grammar of data manipulation, providing a consistent set of verbs that help you solve the most common data manipulation challenges:
+[`dplyr`](https://dplyr.tidyverse.org/) is a grammar of data manipulation, providing a consistent set of verbs that help you solve the most common data manipulation challenges:
 
 - `mutate()` adds new variables that are functions of existing variables
 - `select()` picks variables based on their names
@@ -110,7 +110,7 @@ my_data %>% filter(Videreg_udd <= 25 & Pct_prv_sk_elev >= 25)
 
 ## Examples - `summarise()`
 
-We can calculate summary statistics using the `summary()` function:
+We can calculate summary statistics using the `summarise()` function:
 
 ```{r, echo=TRUE}
 my_data %>% summarise(mu = mean(Folkeskudg_elev), sigma = sd(Folkeskudg_elev))
